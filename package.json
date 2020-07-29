@@ -1,6 +1,7 @@
 {
   "name": "natours",
   "version": "1.0.0",
+  "homepage": "https://Khanhtran47.github.io/Natours-Project",
   "description": "Landing page for natours",
   "main": "index.js",
   "scripts": {
