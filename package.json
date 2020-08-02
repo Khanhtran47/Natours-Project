@@ -1,7 +1,7 @@
 {
   "name": "natours",
   "version": "1.0.0",
-  "homepage": "https://Khanhtran47.github.io/Natours-Project",
+  "homepage": "https://github.com/Khanhtran47/Natours-Project#readme",
   "description": "Landing page for natours",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,6 @@
   "bugs": {
     "url": "https://github.com/Khanhtran47/Natours-Project/issues"
   },
-  "homepage": "https://github.com/Khanhtran47/Natours-Project#readme",
   "dependencies": {
     "node-sass": "^4.14.1"
   }
