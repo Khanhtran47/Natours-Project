@@ -20,33 +20,14 @@
 900-1200px:     Tablet landscape
 [1200-1800px]   Our normal styles apply
 1800px + :      Big desktop
-$breakpoint argument choices:
-- phone
-- tab-port
-- tab-land
-- big-desktop
-1em = 16px
-using em because it will adopt to browser font size set
-*/
-
-@mixin respond-phone {
-  @media (max-width: 600px) {
-    @content;
-  }
-}
-
-/*
-$breakpoint argument choices:
-- phone
-- tab-port
-- tab-land
-- big-desktop
 
 $breakpoint argument choices:
 - phone
 - tab-port
 - tab-land
 - big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 using em because it will adopt to browser font size set
