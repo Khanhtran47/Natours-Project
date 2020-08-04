@@ -58,7 +58,12 @@ body {
   letter-spacing: 2px;
   transition: all 0.5s;
 
+  @include respond(tab-land) {
+    margin-top: 3rem;
+  }
+
   @include respond(tab-port) {
+    margin-top: 3rem;
     font-size: 3rem;
   }
 
