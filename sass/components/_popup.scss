@@ -28,11 +28,23 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.5s 0.2s;
+
+    @include respond(tab-land) {
+      width: 107%;
+    }
+
+    @include respond(tab-port) {
+      display: inline-block;
+    }
   }
 
   &__left {
     width: calc(100% * (1 / 3));
     display: table-cell;
+
+    @include respond(tab-port) {
+      display: none;
+    }
   }
 
   &__right {
@@ -40,6 +52,11 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+
+    @include respond(tab-port) {
+      display: inline-block;
+      width: calc(100%);
+    }
   }
 
   &__img {
@@ -50,6 +67,7 @@
   &__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
+    text-align: justify;
 
     -moz-column-count: 2;
     -moz-column-gap: 4rem;
@@ -88,6 +106,28 @@
       display: inline-block;
       transition: all 0.2s;
       line-height: 1;
+    }
+
+    @include respond(tab-land) {
+      &:link,
+      &:visited {
+        top: 1.5rem;
+        right: 6.5rem;
+      }
+    }
+
+    @include respond(tab-port) {
+      &:link,
+      &:visited {
+        right: 5.5rem;
+      }
+    }
+
+    @include respond(phone) {
+      &:link,
+      &:visited {
+        right: 4.5rem;
+      }
     }
 
     &:hover {
